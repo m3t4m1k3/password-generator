@@ -6,25 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <title>Password Generator</title>
   </head>
   <body>
     <article class="card">
-      <section class="section-title">
-        <h1>
+      <section>
+        <h1 class="title">
           Generate a<br />
-          <span id="title-alt">random password</span>
+          <span class="alt-title">random password</span>
         </h1>
         <h2>Never use an insecure password again.</h2>
       </section>
-      <section class="section-input">
-        <button id="btn-generate-pwd">Generate passwords</button>
+      <section class="inputs">
+        <div class="inputs-left">
+          <button class="btn btn-generate">Generate passwords</button>
+        </div>
+        <div class="inputs-right">
+          <p id="password-length-output">
+            <span class="title alt-title">20</span> Characters
+          </p>
+        </div>
       </section>
-      <section class="section-output">
-        <p class="password-el"></p>
-        <p class="password-el"></p>
-        <p class="password-el"></p>
-        <p class="password-el"></p>
+      <section class="inputs-2">
+        <div>
+          <label for="check-numbers">Numbers</label>
+          <input type="checkbox" name="check-numbers" id="check-numbers" />
+        </div>
+        <div>
+          <label for="check-symbols">Symbols</label>
+          <input type="checkbox" name="check-symbols" id="check-symbols" />
+        </div>
+        <div>
+          <label for="password-length">Length</label>
+          <input
+            type="range"
+            name="password-length"
+            id="password-length"
+            value="16"
+            min="8"
+            max="24"
+          />
+        </div>
+      </section>
+      <section class="outputs">
+        <button class="btn btn-password"></button>
+        <button class="btn btn-password"></button>
+        <button class="btn btn-password"></button>
+        <button class="btn btn-password"></button>
       </section>
     </article>
   </body>
