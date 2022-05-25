@@ -1,0 +1,108 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1c1c;
+}
+
+.title {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+  color: #2b283a;
+}
+
+.alt-title {
+  color: #10b981;
+}
+
+h2,
+label,
+#password-length-output {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+#password-length {
+  padding-top: 2px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.card {
+  margin: 100px auto 0 auto;
+  padding: 75px 50px 50px 50px;
+  width: 550px;
+  height: 550px;
+  background-color: #ecfdf5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+}
+
+.inputs-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs-right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputs-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.outputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #d5d4d8;
+  gap: 30px 30px;
+  padding-top: 30px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  height: 43px;
+  width: 75%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 5px 20px;
+}
+
+.btn-generate::before {
+  content: url(./images/lightning.png);
+  margin-top: 2px;
+}
+
+.btn-generate {
+  color: #fff;
+  background: #10b981;
+}
+
+.btn-password {
+  color: #5def92;
+  background-color: #273549;
+  flex: 40%;
+  height: 43px;
+}
